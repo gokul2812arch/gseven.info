@@ -329,6 +329,9 @@ th {
   border-style: solid;
   border-width: 0;
 }
+.about_container h4{
+  margin-top: 3rem;
+}
 
 label {
   display: inline-block;
@@ -390,11 +393,62 @@ button:not(:disabled),
   padding: 0;
   border-style: none;
 }
+.contact-container{
+  border-radius: 10px;
+  width: 350px;
+  padding: 35px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-flex{
+  display: flex;
+  justify-content: space-around;
+}
+.company-details{
+  border-radius: 10px;
+  width: 350px;
+  padding: 35px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contact-containe:hover,.company-details:hover{
 
+}
 textarea {
   resize: vertical;
 }
+.img_container img:nth-child(1) {
+  width: 150px;
+}
+.img_container img:nth-child(2) {
+  width:70px;
+}
+.img_container img:nth-child(3) {
+  width: 150px;
+}
+.img_container img:nth-child(4) {
+  width: 70px;
+}
 
+.img_container{
+  display: flex;
+  gap: 50px;
+}
+.step h5{
+  color: #1abc9c;
+  margin-top: 2rem;
+}
+.step img{
+  margin-top: 15px;
+}
+.page-section_support{
+  padding: 0 0 3rem 0;
+}
+ol li{
+  list-style-type: none;
+}
+.font-bg{
+  font-size: 30px;
+  font-weight: 800;
+}
 fieldset {
   min-width: 0;
   padding: 0;
@@ -427,6 +481,12 @@ legend + * {
 ::-webkit-datetime-edit-month-field,
 ::-webkit-datetime-edit-year-field {
   padding: 0;
+}
+.steps {
+  margin-top: 35px;
+}
+.contact-container h4{
+  margin-bottom: 30px;
 }
 
 ::-webkit-inner-spin-button {
@@ -2137,11 +2197,24 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .img_container{
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+  .card-flex{
+    gap:45px;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+  .flex-box{
+    flex-direction: column;
   }
 }
 @media (max-width: 1199.98px) {
